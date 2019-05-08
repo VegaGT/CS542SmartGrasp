@@ -29,15 +29,15 @@ You could run this script to train a SVM prediction model. Before you run the sc
 
 * nn.py
 
-You could run this script to train a neural network. You could change the parameter of neural network in line 72.
+You could run this script to train a neural network. You could change the parameter of neural network in line 72. The model is saved as json file, and the weights of neural network is saved as h5 file.
 
 ## Test the prediction model in Robot Simulator
 
-introduction: This test code is developed based on the docker environment from Shadow Robot Company. We adapt the environment to be runnable with latest version of Keras and put our neural network model in it. Test code using ROS for our own model is developed based on previous work found in the docker image.
+Introduction: This test code is developed based on the docker environment from Shadow Robot Company. We adapt the environment to be runnable with latest version of Keras and put our neural network model in it. Test code using ROS for our own model is developed based on previous work found in the docker image.
 
-prerequisite: please make sure you have docker installed on your machine.
+p\Prerequisite: please make sure you have docker installed on your machine.
 
-steps to run the test:
+Steps to run the test:
 
 1. pull and run the docker image from docker hub.
 
@@ -45,4 +45,4 @@ steps to run the test:
 
 2. check the jupyter notebook client at localhost:8888 and Gazebo simulator at localhost:8080 
 3. run the grasp command in jupyter notebook.
-4. run the prediction note book in jupyter notebook.
+4. run the prediction notebook in jupyter notebook.
