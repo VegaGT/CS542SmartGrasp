@@ -1,8 +1,9 @@
-# CS542SmartGrasp
+# CS542 SmartGrasp
 Spring 2019 CS542 machine learning course project at Boston University
 
-
 ## Preprocessing the dataset
+
+Before you start, you need to get the dataset from https://www.kaggle.com/ugocupcic/grasping-dataset.
 
 ### Split a small chunk from the original dataset
 
@@ -16,7 +17,19 @@ This script will generate a .mat file which can be read by MATLAB. Further proce
 
 * preprocess.m
 
-We use a script in MATLAB to extract the label and features from raw data. To run this script, please put the small chunk of raw data generate in the previous step into your MATLAB search path and modify the name of the dataset on line 3 and lin 4 to match the name of the smaller chunk. 
+We use a script in MATLAB to extract the label and features from raw data. To run this script, please put the small chunk of raw data generate in the previous step into your MATLAB search path and modify the name of the dataset on line 3 and line 4 to match the name of the smaller chunk. 
+
+## Training prediction model
+
+We use two different classification methods in this project. Please make sure you have ***scikit-learn*** and ***Keras*** installed on your machine.
+
+* svm.py
+
+You could run this script to train a SVM prediction model. Before you run the script, please make sure you have preprocessed dataset. The file name of dataset could be changed in line 46. Also, you could change the kernel function and other parameters of SVM in line 27.
+
+* nn.py
+
+You could run this script to train a neural network. You could change the parameter of neural network in line 72.
 
 ## Test the prediction model in Robot Simulator
 
