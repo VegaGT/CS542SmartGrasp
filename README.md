@@ -31,11 +31,15 @@ You could run this script to train a SVM prediction model. Before you run the sc
 
 You could run this script to train a neural network. You could change the parameter of neural network in line 72. The model is saved as json file, and the weights of neural network is saved as h5 file.
 
+* experiment.m
+
+The experiment.m is a MATLAB script we use at the beginning of the project. We use this script to test our thoughts. It is not a part of our final results.
+
 ## Test the prediction model in Robot Simulator
 
 Introduction: This test code is developed based on the docker environment from Shadow Robot Company. We adapt the environment to be runnable with latest version of Keras and put our neural network model in it. Test code using ROS for our own model is developed based on previous work found in the docker image.
 
-p\Prerequisite: please make sure you have docker installed on your machine.
+Prerequisite: please make sure you have docker installed on your machine.
 
 Steps to run the test:
 
