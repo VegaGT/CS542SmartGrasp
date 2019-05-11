@@ -43,10 +43,11 @@ Prerequisite: please make sure you have docker installed on your machine.
 
 Steps to run the test:
 
+0. make sure you have docker installed on your machine.
 1. pull and run the docker image from docker hub.
 
     docker run -it --name sgs -p 8080:8080 -p 8888:8888 -p 8181:8181 -p 7681:7681 yxiao1996/cs542smartgrasp
 
-2. check the jupyter notebook client at localhost:8888 and Gazebo simulator at localhost:8080 
-3. run the grasp command in jupyter notebook.
-4. run the prediction notebook in jupyter notebook.
+2. check the jupyter notebook client at localhost:8888 and Gazebo simulator at localhost:8080. you should be able to see a simulated environment with a table, a red ball and a robotic arm in the simulator. 
+3. run the grasp command in jupyter notebook. please find the "Smart Grasping Sandbox.ipynb". by running the fist three blocks, you should be able to observe that the robotic hand would move towards the red ball and try to grasp it.
+4. run the prediction notebook in jupyter notebook. please find the "DisplayGraspQualiyuNeuralNet.ipynb", the displaying block is the final block in this notebook. to reproduce the result, please first send command to the robotic arm for grasping in "Smart Grasping Sandbox.ipynb" and then run all blocks in "DisplayGraspQualiyuNeuralNet.ipynb". you should be able to observe the jump of prediction as we shown in presentation. 
